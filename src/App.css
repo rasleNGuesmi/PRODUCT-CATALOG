@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
